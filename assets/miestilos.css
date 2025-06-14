@@ -1,0 +1,49 @@
+body {
+ background:linear-gradient(to right, #e0e0e0, #bfbfbf); /* de gris muy claro a gris claro */
+}
+
+/* Clases */
+.my-bg-navBar{
+background-color: #16a085
+}
+
+.my-header-style {
+background: linear-gradient(to right, #006400, #00ff00); /* verde oscuro a verde claro */
+color: #fff;
+text-align: left;
+padding: 20px;
+font-size: 40px;
+}
+
+.my-footer-style {
+background: linear-gradient(to right, #006400, #00ff00); /* verde oscuro a verde claro */
+}
+
+.my-card-style {
+max-width: 540px;
+margin-top: 20vh; /* vh alto de la pantalla */
+}
+
+.my-card-style1 {
+max-width: 850px;
+margin-top: 10vh; /* vh alto de la pantalla */
+}
+
+.my-card-text-style {
+text-align: justify;
+}
+
+.my-row-style {
+margin-top: 10vh
+}
+
+/* Mantener footer en la parte inferior de la pagina */
+.wrapper {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+.content {
+flex: 1;
+}

@@ -1,0 +1,140 @@
+<!-- https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<!--Siguiente Etiqueta: Identifica el tipo caracteres a utilizar-->
+		<meta charset="utf-8">
+		<!-- Definición viewport por medio etiqueta meta-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Nombre en la pestaña del navegador -->
+		<title>eJoLReS</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../miestilos.css">
+	</head>
+	
+    <body class="p-1">
+    <!-- 
+        wrapper and content son necesarios para mantener al footer en la parte
+        inferior de la pagina
+    -->
+    <div class="wrapper">
+        <main class="content">
+    	<!-- https://getbootstrap.com/docs/5.3/components/card/#header-and-footer -->
+    	<div class="card-header my-header-style">
+    		Acerca de eJoLR
+    	</div>
+
+    	<!-- Nav -->
+    	<!--https://getbootstrap.com/docs/5.3/components/navbar/ bg adiciona background white-->
+    	<nav class="navbar navbar-expand-lg body-tertiary my-bg-navBar"  data-bs-theme="light">
+      	    <div class="container-fluid">
+                <!-- Logo/marca incrustado en navbar -->
+                <a class="navbar-brand" href="#">
+    		 		<img src="../imagenes/logo.reloj.png" alt="Bootstrap" width="30" height="28" class="d-inline-block align-text-top">
+    		 		eJoLR
+    	       	</a>
+    			<!-- Boton para el colapso por el tamaño de pantalla -->
+    		   	<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" 	aria-label="Toggle navigation">
+    		   		<span class="navbar-toggler-icon"></span>
+    		   	</button>
+    		   	<!-- Paginas -->
+    			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    			   	<div class="offcanvas-header">
+    					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">eJoLR</h5>
+    					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    				</div>
+    	            <ul class="navbar-nav justify-content flex-grow-1 pe-3">
+    	            	<li class="nav-item">
+    		        		<a class="nav-link active"  href="../../principal.html">
+    							Inicio
+    						</a>
+    		     		</li>
+    					 <li class="nav-item">
+    						 <a class="nav-link active" aria-current="page" href="acerca.html">
+    							 Acerca de eJoLR
+    						</a>
+    					</li>
+    					<li class="nav-item">
+    						<a class="nav-link active" href="quienes.html">
+    							Quiénes Somos
+    						</a>
+    					</li>
+    	            	<li class="nav-item">
+    		       			<a class="nav-link active" href="registrar.html">
+    							Registrarse
+    						</a>
+    		     		</li>
+    	            	<li class="nav-item">
+    		       			<a class="nav-link active" href="acceder.html">
+    							Acceder
+    						</a>
+    		     		</li>
+    	            	<li class="nav-item">
+                    	    <a class="nav-link disabled fw-bold" aria-disabled="true">  
+    							ReLoJ <-> PuNTuaLiDaD 
+    						</a>
+                    	</li>
+    	        	</ul>
+                </div>
+    	       <!-- botón de buscar -->
+    	       <form class="d-flex mt-3" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+                      <button class="btn btn-dark" type="submit">Buscar</button>
+                   </form>
+      	    </div>
+    	</nav>
+    	<!-- End Nav -->
+
+        <!-- https://getbootstrap.com/docs/5.3/components/card/ -->
+        <!-- Información acerca de la empresa (mt: margin top, mx-auto: centra) -->
+        <div class="card mx-auto mb-5 my-card-style">
+            <div class="row g-0">
+                <!-- Imagen -->
+                <div class="col-md-4 mt-5">
+                    <img src="../imagenes/logo.reloj.png" 
+                    alt="Bootstrap" width="200" height="200" 
+                    class="d-inline-block align-text-top">
+                </div>
+                <!-- Segunda Columna Texto -->
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">eJoLR</h5>
+                    <div class="card-text my-card-text-style">
+                        Es una empresa dedicada a la venta de relojes de mano, principalmente analógicos. Contamos con una gran variedad de estilo, marca, tipo, entre otros. También, vendemos relojes digitales e inteligentes pero en menor volumen.
+                    </div>
+                    <div class="card-text mt-2 my-card-text-style">
+                        Sin embargo, el fuerte de eJoLR es la fabricación de relojes para exteriores o relojes CuCu, como el de <a href="https://es.wikipedia.org/wiki/Reloj_Cucu_de_Villa_Carlos_Paz">Villa Carlos Paz, Cordoba</aa>.
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Información acerca de la empresa -->
+        </main>
+        <!-- End container -->
+        
+        <!-- Footer -->
+        <div class="card-footer text-center my-footer-style">
+            <a href="https://www.instagram.com/" class="btn">
+                <img src="../imagenes/IG.png" alt="Bootstrap" width="20" height="20" class="d-inline-block align-text-top">
+            </a>
+            <a href="https://www.facebook.com/" class="btn">	
+                <img src="../imagenes/FB.png" alt="Bootstrap" width="20" height="20" class="d-inline-block align-text-top">
+            </a>
+            <a href="https://ar.pinterest.com/" class="btn">
+                <img src="../imagenes/PR.png" alt="Bootstrap" width="30" height="30" class="d-inline-block align-text-top">
+            </a>
+            <div>
+                San Juan con Pelligrini 321  |
+                relojes@email.com  |
+                379 0 00 00 11
+            </div>
+            <div>Derechos de Autor &copy; | 2025 eJoLR </div>
+        </div>
+        <!-- End Footer -->
+        <!-- JS necesario para el carousel-autoplay-->
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </div>
+    <!-- End wrapper -->
+    </body>
+</html>
