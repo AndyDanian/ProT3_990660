@@ -1,89 +1,6 @@
-<!-- https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
-<!DOCTYPE html>
-<html lang="es">
-	<head>
-		<!--Siguiente Etiqueta: Identifica el tipo caracteres a utilizar-->
-		<meta charset="utf-8">
-		<!-- Definición viewport por medio etiqueta meta-->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Nombre en la pestaña del navegador -->
-		<title>eJoLReS</title>
-		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="assets/miestilos.css">
-	</head>
-	
-	<body class="p-1">
-	<!-- 
-    wrapper and content son necesarios para mantener al footer en la parte
-    inferior de la pagina
-    -->
-	<div class="wrapper">
-        <main class="content">
-		<!-- https://getbootstrap.com/docs/5.3/components/card/#header-and-footer -->
-		<div class="card-header my-header-style">
+		<!--div class="card-header my-header-style">
 			Inicio
-		</div>
-
-		<!-- Nav -->
-		<!--https://getbootstrap.com/docs/5.3/components/navbar/ bg adiciona background white-->
-		<nav class="navbar navbar-expand-lg body-tertiary my-bg-navBar"  data-bs-theme="light">
-	  	    <div class="container-fluid">
-	            <!-- Logo/marca incrustado en navbar -->
-	            <a class="navbar-brand" href="#">
-			 		<img src="assets/imagenes/logo.reloj.png" alt="Bootstrap" width="30" height="28" class="d-inline-block align-text-top">
-			 		eJoLR
-		       	</a>
-				<!-- Boton para el colapso por el tamaño de pantalla -->
-			   	<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" 	aria-label="Toggle navigation">
-			   		<span class="navbar-toggler-icon"></span>
-			   	</button>
-			   	<!-- Paginas -->
-				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-				   	<div class="offcanvas-header">
-						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">eJoLR</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-					</div>
-		            <ul class="navbar-nav justify-content flex-grow-1 pe-3">
-		            	<li class="nav-item">
-			        		<a class="nav-link active" aria-current="page" href="principal.html">
-								Inicio
-							</a>
-			     		</li>
-						 <li class="nav-item">
-							 <a class="nav-link active" href="assets/subpaginas/acerca.html">
-								 Acerca de eJoLR
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" href="assets/subpaginas/quienes.html">
-								Quiénes Somos
-							</a>
-						</li>
-		            	<li class="nav-item">
-			       			<a class="nav-link active" href="assets/subpaginas/registrar.html">
-								Registrarse
-							</a>
-			     		</li>
-		            	<li class="nav-item">
-			       			<a class="nav-link active" href="assets/subpaginas/acceder.html">
-								Acceder
-							</a>
-			     		</li>
-		            	<li class="nav-item">
-	                	    <a class="nav-link disabled fw-bold" aria-disabled="true">  
-								ReLoJ <-> PuNTuaLiDaD 
-							</a>
-	                	</li>
-		        	</ul>
-	            </div>
-		       <!-- botón de buscar -->
-		       <form class="d-flex mt-3" role="search">
-	                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
-	                  <button class="btn btn-dark" type="submit">Buscar</button>
-	               </form>
-	  	    </div>
-		</nav>
-		<!-- End Nav -->
+		</div-->
 
 		<!-- Carousel -->
 		<!-- https://getbootstrap.com/docs/5.3/components/carousel/ -->
@@ -156,33 +73,5 @@
 			</button>
 		</div>
 	</div>
-		<!-- End Carousel -->
-	</main>
-		<!-- End container -->
+	<!-- End Carousel -->
 
-		<!-- Footer -->
-		<div class="card-footer text-center my-footer-style">
-			<a href="https://www.instagram.com/" class="btn">
-				<img src="assets/imagenes/IG.png" alt="Bootstrap" width="20" height="20" class="d-inline-block align-text-top">
-			</a>
-			<a href="https://www.facebook.com/" class="btn">	
-				<img src="assets/imagenes/FB.png" alt="Bootstrap" width="20" height="20" class="d-inline-block align-text-top">
-			</a>
-			<a href="https://ar.pinterest.com/" class="btn">
-				<img src="assets/imagenes/PR.png" alt="Bootstrap" width="30" height="30" class="d-inline-block align-text-top">
-			</a>
-			<div>
-				San Juan con Pelligrini 321  |
-				relojes@email.com  |
-				379 0 00 00 11
-			</div>
-			<div>Derechos de Autor &copy; | 2025 eJoLR </div>
-		</div>
-		<!-- End Footer -->
-
-		<!-- JS necesario para el carousel-autoplay-->
-		<script src="assets/js/bootstrap.bundle.min.js"></script>
-	</div>
-	<!-- End wrapper -->
-	</body>
-</html>
