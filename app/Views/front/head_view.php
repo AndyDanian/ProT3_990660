@@ -7,9 +7,11 @@
 	<!-- Definición viewport por medio etiqueta meta-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Nombre en la pestaña del navegador -->
-	<title>eJoLReS</title>
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="assets/miestilos.css">
+	<title><?php echo($titulo);?></title>
+
+	<link href="<?php echo_base_url('assets/css/bootstrap.min.css');?>" rel="stylesheet">
+	<link rel="stylesheet" href="<?php echo_base_url('assets/miestilos.css');?>">
+
 </head> 
 <header class="card-header my-header-style">
 Venta de Relojes 
