@@ -45,11 +45,11 @@ class usuario_controller extends Controller{
 			//nombre que le asignamos a cada respectiva variable. Además, estos nombres asignados, deben
 			//coincidir con los nombres de las variables asignados en el archivo registro.php
 			$formModel->save([
-				'nombre' => $this->request->getVar('nombre');
-				'apellido' => $this->request->getVar('apellido');
-				'usuario' => $this->request->getVar('usuario');
-				'email' => $this->request->getVar('email');
-				'pass' => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT);
+				'nombre' => $this->request->getVar('nombre'),
+				'apellido' => $this->request->getVar('apellido'),
+				'usuario' => $this->request->getVar('usuario'),
+				'email' => $this->request->getVar('email'),
+				'pass' => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT),
 				//password_hash() crea un nuevo hash de contraseña usando un algoritmo 
 				//hash de único sentido, es decir, que solo encripta. Además, de validar 
 				//el password.

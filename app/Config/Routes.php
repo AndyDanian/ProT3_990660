@@ -34,6 +34,6 @@ $routes->get('/panel', 'panel_controller::index',['filter' => 'auth']);
 $routes->get('/logout', 'panel_controller::logout');
 
 
-if(is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')){
+/*if(is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')){
 	require APPPATH . 'Config' . ENVIRONMENT . '/Routes.php'
-}
+}*/
