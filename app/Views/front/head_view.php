@@ -9,8 +9,8 @@
 	<!-- Nombre en la pestaña del navegador -->
 	<title><?php echo($titulo);?></title>
 
-	<link href="<?php echo_base_url('assets/css/bootstrap.min.css');?>" rel="stylesheet">
-	<link rel="stylesheet" href="<?php echo_base_url('assets/miestilos.css');?>">
+	<link href="<?php echo base_url('assets/css/bootstrap.min.css');?>" rel="stylesheet">
+	<link rel="stylesheet" href="<?php echo base_url('assets/miestilos.css');?>">
 
 </head> 
 <header class="card-header my-header-style">

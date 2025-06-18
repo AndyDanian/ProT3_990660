@@ -23,39 +23,39 @@
 			<!-- Imagenes -->
 			<div class="carousel-inner">
 				<div class="carousel-item mt-5 active">
-					<img src="assets/imagenes/reloj.mano.jpg" class="d-block w-100"
+					<img src="<?php echo base_url('assets/imagenes/reloj.mano.jpg');?>" class="d-block w-100"
 					 width="1200px" height="630px">
 					<div class="carousel-caption d-one d-md-block">
 						<h4> Relojes Analógicos de Mano </h4>
 					</div>
 				</div>
 				<div class="carousel-item mt-2">
-					<img src="assets/imagenes/reloj.bolsillo.jpeg" class="d-block w-100" width="1200px" height="630px">
+				<img src="<?php echo base_url('assets/imagenes/reloj.bolsillo.jpeg');?>" class="d-block w-100" width="1200px" height="630px">
 					<div class="carousel-caption d-one d-md-block">
 					<h4> Relojes Analógicos de Bolsillo </h4>
 				</div>
 			  </div>
 			  <div class="carousel-item mt-2">
-				  	<img src="assets/imagenes/reloj.kuku.jpg" class="d-block w-100"
+			  <img src="<?php echo base_url('assets/imagenes/reloj.kuku.jpg');?>" class="d-block w-100"
 					width="1200px" height="630px">
 				  	<div class="carousel-caption d-one d-md-block">
 					  <h4> Relojes Cucu (Encargo) </h4>
 					</div>
 				</div>
 				<div class="carousel-item mt-5">
-					<img src="assets/imagenes/reloj.exterior.jpg" class="d-block w-100">
+				<img src="<?php echo base_url('assets/imagenes/reloj.exterior.jpg');?>" class="d-block w-100">
 					<div class="carousel-caption d-one d-md-block">
 						<h4> Fabricamos Relojes para Exteriores (Encargo) </h4>
 					</div>
 				</div>
 				<div class="carousel-item mt-5">
-					<img src="assets/imagenes/reloj.digital.jpg" class="d-block w-100" width="1200px" height="630px">
+					<img src="<?php echo base_url('assets/imagenes/reloj.digital.jpg');?>" class="d-block w-100" width="1200px" height="630px">
 					<div class="carousel-caption d-one d-md-block">
 						<h4> Relojes Digitales de Mano </h4>
 					</div>
 				</div>
 				<div class="carousel-item mt-5">
-					<img src="assets/imagenes/reloj.smart.jpg" class="d-block w-100" 
+				<img src="<?php echo base_url('assets/imagenes/reloj.smart.jpg');?>" class="d-block w-100" 
 					width="1200px" height="630px">
 					<div class="carousel-caption d-one d-md-block">
 						<h4> Relojes Inteligentes de Mano </h4>

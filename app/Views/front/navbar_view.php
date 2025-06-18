@@ -3,8 +3,8 @@
 <nav class="navbar navbar-expand-lg body-tertiary my-bg-navBar"  data-bs-theme="light">
     <div class="container-fluid">
         <!-- Logo/marca incrustado en navbar -->
-        <a class="navbar-brand" href="<?php echo base_url('principal')?>">
-	 		<img src="<?php echo base_url('assets/imagenes/logo.reloj.png')?>" alt="marca" width="30" height="28" class="d-inline-block align-text-top">
+        <a class="navbar-brand" href="<?php echo base_url('principal');?>">
+	 		<img src="<?php echo base_url('assets/imagenes/logo.reloj.png');?>" alt="marca" width="30" height="28" class="d-inline-block align-text-top">
 	 		eJoLR
        	</a>
 		<!-- Boton para el colapso por el tamaño de pantalla -->

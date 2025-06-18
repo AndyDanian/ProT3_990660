@@ -41,7 +41,7 @@ class Home extends BaseController
 	$data['titulo']='registro';
         echo view('front/head_view',$data);
         echo view('front/navbar_view');
-        echo view('front/registrar');
+        echo view('back/usuario/registrar');
         echo view('front/footer_view');
     }
     public function acceder()
@@ -49,7 +49,7 @@ class Home extends BaseController
 	$data['titulo']='acceder';
         echo view('front/head_view',$data);
         echo view('front/navbar_view');
-        echo view('front/acceder');
+        echo view('back/usuario/acceder');
         echo view('front/footer_view');
     }    
 }
