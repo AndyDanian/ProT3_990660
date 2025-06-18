@@ -1,3 +1,9 @@
+<?php
+$session = session();
+$nombre=$session->get('nombre');
+$perfil=$session->get('perfil_id');
+?>
+
 <!-- Nav -->
 <!--https://getbootstrap.com/docs/5.3/components/navbar/ bg adiciona background white-->
 <nav class="navbar navbar-expand-lg body-tertiary my-bg-navBar"  data-bs-theme="light">
@@ -10,8 +16,47 @@
 		<!-- Boton para el colapso por el tamaño de pantalla -->
 	   	<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" 	aria-label="Toggle navigation">
 	   		<span class="navbar-toggler-icon"></span>
-	   	</button>
-	   	<!-- Paginas -->
+		</button>
+		<!-- Lo que ve el administrador -->
+		<?php if(session()->perfil_id == 1): ?>
+			<div class="btn btn-secondary active btnUser btn-sm">
+			<a href="">ADMIN: <?php echo session('nombre'); ?></a>
+			</div>
+		<a class="navbar-brand" href="#"></a>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		  <li class="nav-item">
+		   <a class="nav-link" href="registrar">Registrarse</a>
+                  </li>
+		  <li class="nav-item">
+		   <a class="nav-link" href="acceder">Acceder</a>
+                  </li>
+		  <li class="nav-item">
+		  <a class="nav-link" href="<?php echo base_url('/logout')?>" tabindex="-1" aria-disabled="true">Cerrar Sesión</a>
+		  </li>
+                 </ul>
+                </div>
+		<!-- Lo que ve el cliente -->
+		<?php elseif(session()->perfil_id == 2): ?>
+			<div class="btn btn-info active btnUser btn-sm">
+			<a href="">CLIENTE: <?php echo session('nombre'); ?></a>
+			</div>
+		<a class="navbar-brand" href="#"></a>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		  <li class="nav-item">
+		   <a class="nav-link" href="principal">Inicio</a>
+                  </li>
+		  <li class="nav-item">
+		   <a class="nav-link" href="quines">Quiénes Somos</a>
+                  </li>
+		  <li class="nav-item">
+		  <a class="nav-link" href="<?php echo base_url('/logout')?>" tabindex="-1" aria-disabled="true">Cerrar Sesión</a>
+		  </li>
+                 </ul>
+                </div>
+		<?php else:?>
+	   	<!-- Usuario General: No cliente, No Administrador. No Logueados -->
 		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 		   	<div class="offcanvas-header">
 				<h5 class="offcanvas-title" id="offcanvasNavbarLabel">eJoLR</h5>
@@ -54,7 +99,8 @@
        <form class="d-flex mt-3" role="search">
               <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
               <button class="btn btn-dark" type="submit">Buscar</button>
-           </form>
+	   </form>
+	<?php endif;?>
     </div>
 </nav>
 <!-- End Nav -->

@@ -30,6 +30,8 @@ $routes->post('/enviar-form', 'usuario_controller::formValidation');
 /*rutas de login*/
 $routes->get('/acceder', 'login_controller');
 $routes->post('/enviarlogin', 'login_controller::auth');
+// Se crea un filtro, para que solo acceda el usuario autorizado (auth), con ayuda del archivo
+// Config/Filters.php. Además, se crea el archivo Filters/Auth.php
 $routes->get('/panel', 'panel_controller::index',['filter' => 'auth']);
 $routes->get('/logout', 'panel_controller::logout');
 

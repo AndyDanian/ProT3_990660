@@ -12,9 +12,9 @@ class usuario_controller extends Controller{
 
 		$dato['titulo']='Registro';
 		echo view('front/head_view',$dato);
-		echo view('front/navbar_view',);
-		echo view('back/usuario/registrar',);
-		echo view('front/footer_view',);
+		echo view('front/navbar_view');
+		echo view('back/usuario/registrar');
+		echo view('front/footer_view');
 	}
 	public function formValidation() {
 
