@@ -98,7 +98,7 @@ en app/Controllers/usuario_controller.php.
                     <label for="Email1" class="form-label fw-bold">
                         Correo Electrónico
                    </label>
-                   <input name="email" type="femail" class="form-control" id="Email1" placeholder="email@example.com">
+                   <input name="email" type="text" class="form-control" id="Email1" placeholder="email@example.com">
 		    <!-- Error -->
 		    <?php if($validation->getError('email')) {?>
 			<div class='alert alert-danger mt-2'>
@@ -106,15 +106,30 @@ en app/Controllers/usuario_controller.php.
 			</div>
 		    <?php }?>
                 </div>
-                <div class="col">
+                <!--div class="col">
                     <label for="Email2" class="form-label fw-bold">
                         Repetir Correo Electrónico
                    </label>
-                   <input name="email" type="femail" class="form-control" id="Email2" placeholder="email@example.com">
-		    <!-- Error -->
-		    <?php if($validation->getError('email')) {?>
+                   <input name="email" type="text" class="form-control" id="Email2" placeholder="email@example.com">
+		    !-- Error --
+		    ?php if($validation->getError('email')) {?>
 			<div class='alert alert-danger mt-2'>
-				<?= $error = $validation->getError('email');?>
+				?= $error = $validation->getError('email');?>
+			</div>
+		    ?php }?>
+                </div-->
+            </div>
+            <!-- Solicitud de Usuario -->
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="Usuario" class="form-label fw-bold">
+                        Usuario
+                   </label>
+                   <input name="usuario" type="text" class="form-control" placeholder="usuario">
+		    <!-- Error -->
+		    <?php if($validation->getError('usuario')) {?>
+			<div class='alert alert-danger mt-2'>
+				<?= $error = $validation->getError('usuario');?>
 			</div>
 		    <?php }?>
                 </div>
@@ -133,27 +148,27 @@ en app/Controllers/usuario_controller.php.
 			</div>
 		    <?php }?>
                 </div>
-                <div class="col">
+                <!--div class="col">
                     <label for="Password2" class="form-label fw-bold">
                         Repetir Contraseña
                     </label>
                     <input name="pass" type="password" class="form-control" id="Password2" placeholder="Repetir Contraseña">
-		    <!-- Error -->
-		    <?php if($validation->getError('pass')) {?>
+		    !-- Error --
+		    ?php if($validation->getError('pass')) {?>
 			<div class='alert alert-danger mt-2'>
-				<?= $error = $validation->getError('pass');?>
+				?= $error = $validation->getError('pass');?>
 			</div>
-		    <?php }?>
-                </div>
+		    ?php }?>
+                </div-->
             </div>
-            <div class="mb-3">
+            <!--div class="mb-3">
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="dropdownCheck">
                     <label class="form-check-label" for="dropdownCheck">
                         ¿Accepta las Condiciones?
                     </label>
                 </div>
-            </div>
+            </div-->
             <button type="submit" value="guardar" class="btn btn-primary">Acceder</button>
             <button type="cancel" value="cancelar" class="btn btn-danger">Cancelar</button>
         </form>

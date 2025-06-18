@@ -6,13 +6,15 @@
 <!-- https://getbootstrap.com/docs/5.3/components/card/ -->
 <div class="card mx-auto mb-5 my-card-style">
      <div class="dropdown m-4">
+
 <!--Mensaje de Error-->
 <?php if(session()->getFlashdata('msg')):?>
 	<div class="alert alert-warning">
 		<?= session()->getFlashdata('msg')?>
 	</div>
 <?php endif;?>
-          <form method="post" action="<?php echo base_url('/enviarlogin');?>">
+
+          <form method="post" action="<?php echo base_url('/enviarlogin') ?>">
                <div class="row justify-content-md-center">
                     <div class="col-md-auto">
 			 <img src="<?php echo base_url('assets/imagenes/email.jpeg');?>" alt="Bootstrap" width="30" height="28" class="d-inline-block align-text-top">
