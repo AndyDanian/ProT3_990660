@@ -13,7 +13,7 @@ class usuario_controller extends Controller{
 		$dato['titulo']='Registro';
 		echo view('front/head_view',$dato);
 		echo view('front/navbar_view');
-		echo view('back/usuario/registrar');
+		echo view('back/usuarios/registrar');
 		echo view('front/footer_view');
 	}
 	public function formValidation() {
@@ -60,7 +60,7 @@ class usuario_controller extends Controller{
 			session()->setFlashdata('success','Usuario registrado con exito');
 			//La siguiente línea redirecciona a login si se cumple con todo, por lo tanto el mensaje
 			//es observado en el login
-			return $this->response->redirect('/acceder');
+			return $this->response->redirect('/ProT3_990660/acceder'); // ('/acceder');
 		}
 	}	
 }

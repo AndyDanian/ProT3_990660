@@ -48,7 +48,7 @@ $perfil=$session->get('perfil_id');
 		   <a class="nav-link" href="principal">Inicio</a>
                   </li>
 		  <li class="nav-item">
-		   <a class="nav-link" href="quines">Quiénes Somos</a>
+		   <a class="nav-link" href="quienes">Quiénes Somos</a>
                   </li>
 		  <li class="nav-item">
 		  <a class="nav-link" href="<?php echo base_url('/logout')?>" tabindex="-1" aria-disabled="true">Cerrar Sesión</a>

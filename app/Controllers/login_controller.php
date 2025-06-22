@@ -12,7 +12,7 @@ class login_controller extends BaseController
 		$dato['titulo']='Acceder';
 		echo view('front/head_view',$dato);
 		echo view('front/navbar_view');
-		echo view('back/usuario/acceder');
+		echo view('back/usuarios/acceder');
 		echo view('front/footer_view');
 	}
 
@@ -21,11 +21,9 @@ class login_controller extends BaseController
 	{
 		$session = session(); //crea id de usuario cuando inicia sesión y se elimina cuando cierra 
 		$model = new usuario_Model();
-
 		//traemos los datos del formulario
 		$email = $this->request->getVar('email');
 		$password = $this->request->getVar('pass'); 
-
 		// Compara $email con el de la tabla del Modelo y traiga la primera coincidencia (first())
 		// para verificar si existe el usuario, como primer verificación
 		$data = $model->where('email',$email)->first();
@@ -67,7 +65,6 @@ class login_controller extends BaseController
 		}
 
 	}
-
 	public function logout()
 	{
 		$session = session();
